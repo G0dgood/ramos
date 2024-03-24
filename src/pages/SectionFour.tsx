@@ -12,6 +12,7 @@ import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import LineChart4 from '../components/LineChart4'
 import ThreeinOneBarChart from '../components/ThreeinOneBarChart'
 import { TbHexagonLetterI } from 'react-icons/tb'
+import { PiCreditCard } from "react-icons/pi";
 
 const SectionFour = () => {
 	return (
@@ -383,21 +384,27 @@ const SectionFour = () => {
 											<p>Sales statistic</p>
 											<div className='profit_revenue_container_one_sub'>
 												<div className='profit_revenue_icon_container'>
-													<div className='revenue_icon_container_orange'>dd</div>
+													<div className='revenue_icon_container_orange'>
+														<PiCreditCard />
+													</div>
 													<div className='icon_container_green_span_main'>
 														<span className='icon_container_green_span'>Total profit</span>
 														<div className='icon_container_green_span_text'>	<span>$</span> 264,2K</div>
 													</div>
 												</div>
 												<div className='profit_revenue_icon_container'>
-													<div className='revenue_icon_container_yellow'>dd</div>
+													<div className='revenue_icon_container_yellow'>
+														<PiCreditCard />
+													</div>
 													<div className='icon_container_green_span_main'>
 														<span className='icon_container_green_span'>Sales revenue</span>
 														<div className='icon_container_green_span_text'>	<span>$</span>132,,4K</div>
 													</div>
 												</div>
 												<div className='profit_revenue_icon_container'>
-													<div className='revenue_icon_container_green'>dd</div>
+													<div className='revenue_icon_container_green'>
+														<PiCreditCard />
+													</div>
 													<div className='icon_container_green_span_main'>
 														<span className='icon_container_green_span'>Average bill</span>
 														<div className='icon_container_green_span_text'>	<span>$</span>1,090</div>

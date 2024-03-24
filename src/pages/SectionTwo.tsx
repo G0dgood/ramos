@@ -5,8 +5,25 @@ import { IoArrowUpCircleSharp } from 'react-icons/io5';
 import trans_img2 from "../assets/img/trans_icon1.jpg"
 import trans_img1 from "../assets/img/trans_icon2.jpg"
 import { GoPlus } from 'react-icons/go';
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
+import { useEffect, useState } from 'react';
 
 const SectionTwo = () => {
+
+	const [isVisible, setVisibility] = useState(false);
+	const [entered, setEntered] = useState(false);
+
+	const onChange = (visiblity: boolean | ((prevState: boolean) => boolean)) => {
+		setVisibility(visiblity);
+	};
+
+	useEffect(() => {
+		if (isVisible) {
+			setEntered(true);
+		}
+	}, [isVisible]);
+
 	return (
 		<section className='section_two'>
 			<main>
@@ -43,24 +60,29 @@ const SectionTwo = () => {
 									</div>
 									<div className='total_profit_container'>
 										<p className='total_profit_container_text'>Total profit</p>
-										<div className='total_profit_container_sub'>
-											<p>$</p> <h1>264,2K</h1>
-										</div>
+										<VisibilitySensor partialVisibility offset={{ bottom: 200 }} onChange={onChange}>
+											<div className='total_profit_container_sub'>
+												<p>$</p> <h1>	{entered ? <CountUp end={264} duration={5} separator="," suffix="2K" /> : null}</h1>
+											</div>
+										</VisibilitySensor>
+
 									</div>
 									<div className='visitors_container'>
 										<small>Visitors</small>
 										<div className='visitors_progress'>
 											<div className='visitors_progress_sub'> </div>
 										</div>
-										<div className='visitors_container_text'>
-											<h1>56K</h1>
-											<div className='visitors_container_text_icon'>
-												<span>
-													<IoArrowUpCircleSharp />
-												</span>
-												<span>+14%</span>
+										<VisibilitySensor partialVisibility offset={{ bottom: 200 }} onChange={onChange}>
+											<div className='visitors_container_text'>
+												<h1>{entered ? <CountUp end={56} duration={5} separator="," suffix="K" /> : null}</h1>
+												<div className='visitors_container_text_icon'>
+													<span>
+														<IoArrowUpCircleSharp />
+													</span>
+													<span>+{entered ? <CountUp end={14} duration={5} suffix="%" /> : null}</span>
+												</div>
 											</div>
-										</div>
+										</VisibilitySensor>
 									</div>
 								</div>
 
@@ -71,7 +93,10 @@ const SectionTwo = () => {
 										<div className='tbhxagonLetteri_container'>
 											<p>Rate</p> <TbHexagonLetterI className='TbHexagonLetterI' />
 										</div>
-										<div className='GoPlus_container'> <GoPlus /><p>58%</p></div>
+										<VisibilitySensor partialVisibility offset={{ bottom: 200 }} onChange={onChange}>
+											<div className='GoPlus_container'> <GoPlus /><p>{entered ? <CountUp end={58} duration={5} suffix="%" /> : null}</p></div>
+										</VisibilitySensor>
+
 									</div>
 								</div>
 							</div>
@@ -86,11 +111,14 @@ const SectionTwo = () => {
 									<div><img src={trans_img2} alt="trans_img" className='img-style2' /></div>
 								</div>
 							</div>
-							<div className='transactions_section_two'>
-								<p>Transactions</p>
-								<div className='transactions_section_second_text'> <IoArrowUpCircleSharp /> <p>+14%</p></div>
-								<h1>43K</h1>
-							</div>
+							<VisibilitySensor partialVisibility offset={{ bottom: 200 }} onChange={onChange}>
+								<div className='transactions_section_two'>
+									<p>Transactions</p>
+									<div className='transactions_section_second_text'> <IoArrowUpCircleSharp /> <p>+{entered ? <CountUp end={14} duration={5} suffix="%" /> : null}</p></div>
+									<h1>{entered ? <CountUp end={43} duration={5} suffix="K" /> : null}</h1>
+								</div>
+							</VisibilitySensor>
+
 						</div>
 						<h5>Widget control</h5>
 						<p className='transactions_section_p'>Reports provide a comprehensive overview of important aspects of web analytics</p>

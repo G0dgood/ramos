@@ -77,6 +77,7 @@ font-weight: 420;
 	
 }
 .technology_insight_container_sub {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -551,6 +552,7 @@ padding: 10px;
  align-items: center; 
 	justify-content: center;
 	background-color: var(--accent-orange);
+	box-shadow: 5px 5px 10px #e6cfc9;
 	color: var(--white);
 }
 .revenue_icon_container_yellow{
@@ -561,6 +563,7 @@ padding: 10px;
  align-items: center; 
 	justify-content: center;
 	background-color: var(--accent-yellow);
+			box-shadow: 5px 5px 10px #ede7cf;
 	color: var(--white);
 }
 .revenue_icon_container_green{
@@ -571,6 +574,7 @@ padding: 10px;
 	align-items: center; 
 	justify-content: center;
 	background-color: var(--accent-green);
+	box-shadow: 5px 5px 10px #d9eee3;
 	color: var(--white);
 }
 
