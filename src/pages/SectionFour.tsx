@@ -24,18 +24,23 @@ const SectionFour = () => {
 					</h1>
 
 					<div className='technology_insight_container'>
-						<div className='technology_insight_container_sub'>
+						<div className='technology_insight_container_sub' data-aos="fade-up"
+							data-aos-duration="8000">
 							<h6>Instant Insights</h6>
 							<div className='GoPlus_icon_container'>
 								<GoPlus />
 							</div>
 						</div>
-						<div className='technology_insight_container_sub'><h6>Al technology</h6>
+						<div className='technology_insight_container_sub' data-aos="fade-up"
+							data-aos-duration="4000">
+							<h6>AI technology</h6>
 							<div className='GoPlus_icon_container'>
 								<GoPlus />
 							</div>
 						</div>
-						<div className='technology_insight_container_sub'><h6>Easy integration</h6>
+						<div className='technology_insight_container_sub data-aos="fade-up"
+						data-aos-duration="2000"'>
+							<h6>Easy integration</h6>
 							<div className='GoPlus_icon_container'>
 								<GoPlus />
 							</div>
@@ -43,8 +48,9 @@ const SectionFour = () => {
 					</div>
 				</div>
 
-				<div className='turning_data_number'>
-					<div className='Iphone_container_one'>
+				<div className='turning_data_number' >
+					<div className='Iphone_container_one' data-aos="fade-up"
+						data-aos-duration="5000">
 						<div className='turning_data_number_main2'>
 							{/* phone norch */}
 							<div className=' phone_norch' />
@@ -54,7 +60,7 @@ const SectionFour = () => {
 								<SlBell size={18} />
 							</div>
 
-							<div className='tablet_body2'>
+							<div className='tablet_body2' >
 								<small className='tablet_body_small'>Revenue amount</small>
 
 								<div className='tablet_body_number_container'>
@@ -259,8 +265,8 @@ const SectionFour = () => {
 					<div className='tablet_btn_one'></div>
 					<div className='tablet_btn_two'></div>
 					<div className='tablet_btn_three'></div>
-					<div className='turning_data_number_container'>
-						<div className='table_header'>
+					<div className='turning_data_number_container' >
+						<div className='table_header' >
 							<div className='table_header_logo'>
 								<img src={logo} alt="logo" />
 								<h5>ramos</h5>
@@ -270,7 +276,7 @@ const SectionFour = () => {
 								<input placeholder='Search' className='header_search_container_input' />
 							</div>
 						</div>
-						<div className='tablet_body'>
+						<div className='tablet_body' >
 							<small className='tablet_body_small'>Revenue amount</small>
 
 							<div className='tablet_body_number_container'>

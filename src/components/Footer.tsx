@@ -13,7 +13,7 @@ const Footer = () => {
 						<a href="#" target="_blank" rel="noopener noreferrer">Pricing</a>
 						<a href="#" target="_blank" rel="noopener noreferrer">Contacts</a>
 					</div>
-					<h1>hello@ramos.com</h1>
+					<h1 data-aos="fade-up" data-aos-delay="200">hello@ramos.com</h1>
 				</div>
 				<div className='footer_second_container'>
 					<div className='footer_second_container_sub'>
@@ -35,10 +35,10 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className='footer_three_container'>
-					<div className='footer_three_container_h1'><h1>Ramos</h1><span>®</span></div>
+					<div className='footer_three_container_h1' data-aos="zoom-in-right"><h1>Ramos</h1><span>®</span></div>
 					<span>privacy policy</span>
 					<span>License agreement</span>
-					<div className='footer_qr_code'>
+					<div className='footer_qr_code' data-aos="zoom-out">
 						<img src={qr} alt="logo" />
 					</div>
 				</div>

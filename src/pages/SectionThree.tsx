@@ -6,24 +6,26 @@ const SectionThree = () => {
 		<section>
 			<main>
 				<div className='maximize_efficiency_container'>
-					<h1 className='maximize_efficiency_h1'>Maximize efficiency</h1>
-					<h1 className='maximize_efficiency_h1'>with our intuitive</h1>
+					<div data-aos="fade-up">
+						<h1 className='maximize_efficiency_h1' >Maximize efficiency</h1>
+						<h1 className='maximize_efficiency_h1' >with our intuitive</h1>
+					</div>
 					<div className='text_efficiency_icons_container'>
 						<div className='maximize_efficiency_icons_container'>
-							<div className='maximize_efficiency_side_icon1'>
+							<div className='maximize_efficiency_side_icon1' data-aos="fade-up" data-aos-delay="200">
 								<div className='maximize_efficiency_side_dotted'>
 									<div className='efficiency_side_dotted_icon_container'>
 										<TbActivityHeartbeat />
 									</div>
 								</div>
 							</div>
-							<div className='maximize_efficiency_side_icon2'>
+							<div className='maximize_efficiency_side_icon2' data-aos="fade-up">
 								<h3>45%</h3>
 								<p>system grow</p>
 								<p>faster</p>
 							</div>
 						</div>
-						<div className='maximize_efficiency_side_text_container'>
+						<div className='maximize_efficiency_side_text_container' data-aos="fade-up-left" data-aos-delay="200">
 							<h1 className='maximize_efficiency'>
 								<span className="moving-text">Analytics Service</span>
 							</h1>
