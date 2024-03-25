@@ -39,7 +39,7 @@ const SectionTwo = () => {
 					</div>
 				</div>
 				<div className='section_two_analytics_container'>
-					<div className='section_two_analytics_one'>
+					<div className='section_two_analytics_one' data-aos="fade-up">
 						<div className='section_two_analytics_one_sub'>
 							<button className='Setting_report'>Setting up report</button>
 							<div>
@@ -102,9 +102,9 @@ const SectionTwo = () => {
 							</div>
 						</div>
 					</div>
-					<div className='section_two_analytics_two'>
-						<div className='widget_control_cards'>
-							<div className='transactions_section_first'>
+					<div className='section_two_analytics_two' data-aos="fade-up">
+						<div className='widget_control_cards'  >
+							<div className='transactions_section_first' data-aos="fade-left" data-aos-delay="300">
 								<HiOutlineSquare3Stack3D />
 								<div className='transactions_section_first_text'>
 									<div><img src={trans_img1} alt="trans_img" className="img-style1" /></div>
@@ -112,7 +112,7 @@ const SectionTwo = () => {
 								</div>
 							</div>
 							<VisibilitySensor partialVisibility offset={{ bottom: 200 }} onChange={onChange}>
-								<div className='transactions_section_two'>
+								<div className='transactions_section_two' data-aos="fade-right" data-aos-delay="300">
 									<p>Transactions</p>
 									<div className='transactions_section_second_text'> <IoArrowUpCircleSharp /> <p>+{entered ? <CountUp end={14} duration={5} suffix="%" /> : null}</p></div>
 									<h1>{entered ? <CountUp end={43} duration={5} suffix="K" /> : null}</h1>

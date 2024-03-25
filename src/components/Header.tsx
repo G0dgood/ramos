@@ -7,7 +7,7 @@ const Header = () => {
 
 	return (
 		<div id="header">
-			<div className='header_sub_one'>
+			<div className='header_sub_one' data-aos="fade-up">
 				<a href="/">
 					<img src={logo} alt="logo" />
 				</a>
@@ -15,7 +15,7 @@ const Header = () => {
 			</div>
 
 
-			<div className='header_sub_two'>
+			<div className='header_sub_two' data-aos="fade-up">
 				<span className='info'>Dashboard</span>
 				<span>Report</span>
 				<span>Document</span>
@@ -23,7 +23,7 @@ const Header = () => {
 				<span>Settings</span>
 			</div>
 
-			<div className='header_sub_three'>Sign Up</div>
+			<div className='header_sub_three' data-aos="fade-up">Sign Up</div>
 		</div>
 	)
 }
