@@ -500,3 +500,7 @@ font-size: 15px;
 .conversion_rate_yellow2 svg{
 font-size: 13px;
 }
+
+.control_card_container_span{
+	color: #CCCCCC;
+}

@@ -12,16 +12,16 @@ const SectionFive = () => {
 			<main>
 				<div className='control_card_container'>
 					<h1>We give you full</h1>
-					<h1>control over your data</h1>
+					<h1><span className='control_card_container_span'>control</span> over your data</h1>
 				</div>
 
 				<div className='control_cards'>
 					<div className='control1'>
-						<div className='control_first'>
-							<div className='conversion_rate'>
+						<div className='control_first' >
+							<div className='conversion_rate' data-aos="fade-right" >
 								<h1>Conversion rate</h1>
 								<div className='conversion_rate_yellow'>
-									<div className='conversion_rate_yellow3'>
+									<div className='conversion_rate_yellow3' data-aos="fade-left" data-aos-delay="300">
 										<h5>Sales revenue</h5>
 										<div className='conversion_rate_yellow3_span'>	<span>$</span>1,090</div>
 
@@ -31,7 +31,7 @@ const SectionFive = () => {
 											<div className='conversion_mark3'></div>
 										</div>
 
-										<div className='min_price_container_main'>
+										<div className='min_price_container_main' >
 											<div className='min_price_container'>
 												<div className='min_price_container_sub'>
 													<div className='min_price_container_sub_circle'>
@@ -116,8 +116,8 @@ const SectionFive = () => {
 													<div className='chart_v3'> </div>
 													<span className='chart_vtext'>2019</span>
 												</div>
-												<div className='chart_bar1'>
-													<div className='chart_v4'>
+												<div className='chart_bar1' >
+													<div className='chart_v4' data-aos="fade-up">
 														<div className='chart_vtext_container' />
 													</div>
 													<span className='chart_vtext'>2018</span>
@@ -145,7 +145,7 @@ const SectionFive = () => {
 							<img src={logo} alt="logo" />
 						</div>
 					</div>
-					<h1>Get Started</h1>
+					<h1 data-aos="fade-up">Get Started</h1>
 					<div className='get_started_p'>
 						<p>Turn information into advantage! Start using</p>
 						<p>Ramos today. Sign up for a free trial.</p>

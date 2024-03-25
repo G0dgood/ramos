@@ -34,7 +34,7 @@ const SectionThree = () => {
 
 					<div className='explore_trattic_container'>
 						<h5>Explore trattic sources, page behavior, conversions and more to gain deep insigh into your audience. With us, your business doesn't just adapt - it evolves</h5>
-						<div className='demo_btn_container'>
+						<div className='demo_btn_container' data-aos="fade-up-right">
 							<button className='demo_btn1'>Request a demo</button>
 							<button className='demo_btn2'>Start for free</button>
 						</div>

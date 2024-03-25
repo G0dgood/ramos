@@ -38,8 +38,8 @@ const SectionFour = () => {
 								<GoPlus />
 							</div>
 						</div>
-						<div className='technology_insight_container_sub data-aos="fade-up"
-						data-aos-duration="2000"'>
+						<div className='technology_insight_container_sub' data-aos="fade-up"
+							data-aos-duration="2000">
 							<h6>Easy integration</h6>
 							<div className='GoPlus_icon_container'>
 								<GoPlus />
@@ -65,7 +65,7 @@ const SectionFour = () => {
 
 								<div className='tablet_body_number_container'>
 									<div className='tablet_body_number_container_sub2'>
-										<p>$</p><h1>1342,567</h1>
+										<p>$</p><h1>1,342,567</h1>
 									</div>
 									<div className='tablet_body_icon_container_sub'>
 										<IoArrowUpCircleSharp /><p>+21%</p> </div>
@@ -146,7 +146,7 @@ const SectionFour = () => {
 							</div>
 							<div className='button_active_bg_main2 bg_main-absolute'>
 								<div className='button_active_bg_main_sub2'>
-									<div className='button_active_bg_main_sub_set'>
+									<div className='button_active_bg_main_sub_set' data-aos="fade-up" data-aos-delay="100">
 										<div className='new_set'> <h3>
 											Data report
 										</h3>
@@ -281,7 +281,7 @@ const SectionFour = () => {
 
 							<div className='tablet_body_number_container'>
 								<div className='tablet_body_number_container_sub'>
-									<p>$</p><h1>1342,567</h1>
+									<p>$</p><h1>1,342,567</h1>
 								</div>
 								<div className='tablet_body_icon_container_sub'>
 									<IoArrowUpCircleSharp /><p>+21%</p> </div>
